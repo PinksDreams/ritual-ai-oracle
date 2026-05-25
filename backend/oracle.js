@@ -34,7 +34,9 @@ async function analyzeSentiment() {
 
   try {
 
-    console.log("\nFetching crypto news...\n");
+    console.log("\n============================");
+    console.log("RUNNING AI ORACLE UPDATE");
+    console.log("============================\n");
 
     const feed = await parser.parseURL(
       "https://www.coindesk.com/arc/outboundfeeds/rss/"
@@ -53,7 +55,9 @@ async function analyzeSentiment() {
 
     console.log("Latest Headlines:\n");
 
-    console.log(headlines);
+    latestItems.forEach((item) => {
+      console.log("-", item.title);
+    });
 
     const result = sentiment.analyze(headlines);
 
@@ -67,13 +71,13 @@ async function analyzeSentiment() {
       label = "BEARISH";
     }
 
-    console.log("\nAI Sentiment Analysis:\n");
+    console.log("\nAI Sentiment:\n");
 
     console.log("Score:", result.score);
 
     console.log("Label:", label);
 
-    console.log("\nUpdating smart contract...\n");
+    console.log("\nUpdating blockchain...\n");
 
     const tx = await contract.updateSentiment(
       result.score,
@@ -82,11 +86,14 @@ async function analyzeSentiment() {
 
     await tx.wait();
 
-    console.log("Contract updated!");
+    console.log("SUCCESS");
+    console.log("TX:", tx.hash);
 
-    console.log("TX Hash:", tx.hash);
+    console.log("\nNext update in 5 minutes...\n");
 
   } catch (error) {
+
+    console.error("\nOracle Error:\n");
 
     console.error(error);
 
@@ -95,3 +102,9 @@ async function analyzeSentiment() {
 }
 
 analyzeSentiment();
+
+setInterval(() => {
+
+  analyzeSentiment();
+
+}, 5 * 60 * 1000);
