@@ -18,7 +18,12 @@ export default function Home() {
       method: "eth_requestAccounts",
     });
 
-    setWallet(accounts[0]);
+    const short =
+  accounts[0].slice(0, 6) +
+  "..." +
+  accounts[0].slice(-4);
+
+setWallet(short);
   }
 
   async function loadContractData() {

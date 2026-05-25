@@ -9,18 +9,14 @@ export const ABI = [
   "function lastUpdated() view returns (uint256)"
 ];
 
+const RPC_URL = "https://rpc.ritualfoundation.org";
+
 export async function getContract() {
-  if (!window.ethereum) {
-    throw new Error("MetaMask not found");
-  }
-
-  const provider = new ethers.BrowserProvider(window.ethereum);
-
-  const signer = await provider.getSigner();
+  const provider = new ethers.JsonRpcProvider(RPC_URL);
 
   return new ethers.Contract(
     CONTRACT_ADDRESS,
     ABI,
-    signer
+    provider
   );
 }
