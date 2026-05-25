@@ -4,13 +4,17 @@ import { useEffect, useState } from "react";
 import { getContract } from "../lib/contract";
 
 export default function Home() {
+
   const [wallet, setWallet] = useState("");
   const [score, setScore] = useState("0");
   const [label, setLabel] = useState("loading...");
   const [updated, setUpdated] = useState("");
+  const [news, setNews] = useState<any[]>([]);
 
   async function connectWallet() {
+
     try {
+
       if (!(window as any).ethereum) {
         alert("Install MetaMask");
         return;
@@ -28,11 +32,15 @@ export default function Home() {
       setWallet(shortAddress);
 
     } catch (err) {
+
       console.error(err);
+
     }
+
   }
 
   async function loadContractData() {
+
     try {
 
       const contract = await getContract();
@@ -56,11 +64,18 @@ export default function Home() {
 
       setUpdated(date.toLocaleString());
 
+      const response = await fetch("/news.json");
+
+      const data = await response.json();
+
+      setNews(data);
+
     } catch (err) {
 
       console.error(err);
 
     }
+
   }
 
   useEffect(() => {
@@ -76,6 +91,7 @@ export default function Home() {
   }, []);
 
   return (
+
     <main className="min-h-screen bg-black text-white flex items-center justify-center p-6">
 
       <div className="w-full max-w-4xl border border-zinc-800 rounded-3xl p-8 bg-black shadow-2xl">
@@ -83,6 +99,7 @@ export default function Home() {
         <div className="flex items-center justify-between mb-8">
 
           <div>
+
             <h1 className="text-5xl font-bold mb-2">
               Ritual AI Oracle
             </h1>
@@ -90,6 +107,7 @@ export default function Home() {
             <p className="text-zinc-400">
               Autonomous AI sentiment oracle
             </p>
+
           </div>
 
           <button
@@ -149,17 +167,13 @@ export default function Home() {
 
           <ul className="space-y-3 text-zinc-200">
 
-            <li>
-              • Bitcoin ETF inflows continue rising
-            </li>
+            {news.map((item, index) => (
 
-            <li>
-              • Ethereum L2 activity hits new highs
-            </li>
+              <li key={index}>
+                • {item.title}
+              </li>
 
-            <li>
-              • AI-driven crypto trading volume increases
-            </li>
+            ))}
 
           </ul>
 
@@ -168,5 +182,7 @@ export default function Home() {
       </div>
 
     </main>
+
   );
+
 }

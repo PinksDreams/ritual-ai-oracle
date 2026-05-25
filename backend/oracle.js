@@ -1,5 +1,6 @@
 require("dotenv").config();
 
+const fs = require("fs");
 const Parser = require("rss-parser");
 const Sentiment = require("sentiment");
 const { ethers } = require("ethers");
@@ -39,8 +40,14 @@ async function analyzeSentiment() {
       "https://www.coindesk.com/arc/outboundfeeds/rss/"
     );
 
-    const headlines = feed.items
-      .slice(0, 5)
+    const latestItems = feed.items.slice(0, 5);
+
+    fs.writeFileSync(
+      "./frontend/public/news.json",
+      JSON.stringify(latestItems, null, 2)
+    );
+
+    const headlines = latestItems
       .map(item => item.title)
       .join(" ");
 
