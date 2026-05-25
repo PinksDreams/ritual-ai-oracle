@@ -55,8 +55,8 @@ export default function Home() {
         await contract.lastUpdated();
 
       const date = new Date(
-  Number(timestamp)
-);
+      Number(timestamp)
+      );
 
       setScore(sentimentScore.toString());
 
