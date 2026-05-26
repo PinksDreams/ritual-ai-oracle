@@ -1,20 +1,26 @@
 import { NextResponse } from "next/server";
 
-let cachedNews: any[] = [];
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export async function GET() {
-  return NextResponse.json({
-    news: cachedNews,
-    updatedAt: new Date().toISOString(),
-  });
-}
+  try {
+    // пример: замени на свой источник новостей
+    const res = await fetch("https://example.com/api/news", {
+      cache: "no-store",
+    });
 
-export async function POST(req: Request) {
-  const body = await req.json();
-  cachedNews = body.news || [];
+    const data = await res.json();
 
-  return NextResponse.json({
-    ok: true,
-    count: cachedNews.length,
-  });
+    return NextResponse.json({
+      news: data,
+      updatedAt: new Date().toISOString(),
+    });
+  } catch (error) {
+    return NextResponse.json({
+      news: [],
+      error: "Failed to fetch news",
+      updatedAt: new Date().toISOString(),
+    });
+  }
 }
