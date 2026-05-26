@@ -1,19 +1,69 @@
 [
   {
-    "creator": "Krisztian Sandor",
-    "title": "Bitmine made its largest ETH purchase this year despite Tom Lee's slowdown suggestion",
-    "link": "https://www.coindesk.com/business/2026/05/26/bitmine-made-its-largest-eth-purchase-this-year-despite-tom-lee-s-slowdown-suggestion",
-    "pubDate": "Tue, 26 May 2026 13:27:51 +0000",
+    "creator": "Olivier Acuna",
+    "title": "Bermuda, the small island nation with huge crypto ambitions",
+    "link": "https://www.coindesk.com/business/2026/05/26/bermuda-the-small-island-nation-with-huge-crypto-ambitions",
+    "pubDate": "Tue, 26 May 2026 16:23:05 +0000",
     "content:encoded": "",
-    "dc:creator": "Krisztian Sandor",
-    "content": "The company bought 111,942 ether last week worth $237 million, ramping up purchases to take advantage of ETH's drop below $2,200.",
-    "contentSnippet": "The company bought 111,942 ether last week worth $237 million, ramping up purchases to take advantage of ETH's drop below $2,200.",
-    "guid": "118e451a-0f5e-4c44-921f-49954c27fd9a",
+    "dc:creator": "Olivier Acuna",
+    "content": "The government recently announced it would become the world’s first economy to go fully onchain, a move officials believe will bring its people new opportunities.",
+    "contentSnippet": "The government recently announced it would become the world’s first economy to go fully onchain, a move officials believe will bring its people new opportunities.",
+    "guid": "b0f89e30-b209-4146-a2a9-729668a940e7",
     "categories": [
       {
         "_": "Finance",
         "$": {
           "domain": "https://www.coindesk.com/business"
+        }
+      },
+      {
+        "_": "Coinbase",
+        "$": {
+          "domain": "tag"
+        }
+      },
+      {
+        "_": "Stablecoins",
+        "$": {
+          "domain": "tag"
+        }
+      },
+      {
+        "_": "Circle",
+        "$": {
+          "domain": "tag"
+        }
+      },
+      {
+        "_": "News",
+        "$": {
+          "domain": "https://www.coindesk.com/"
+        }
+      }
+    ],
+    "isoDate": "2026-05-26T16:23:05.000Z"
+  },
+  {
+    "creator": "Margaux Nijkerk",
+    "title": "Coinbase’s Base launches AI tool for ChatGPT to manage crypto wallets and DeFi apps",
+    "link": "https://www.coindesk.com/tech/2026/05/26/coinbase-s-base-launches-ai-tool-for-chatgpt-to-manage-crypto-wallets-and-defi-apps",
+    "pubDate": "Tue, 26 May 2026 16:00:00 +0000",
+    "content:encoded": "",
+    "dc:creator": "Margaux Nijkerk",
+    "content": "The product, called Base MCP, connects a user’s Base Account to AI clients such as ChatGPT, Claude and Cursor using the Model Context Protocol (MCP), an emerging standard that allows AI systems to securely interface with external tools and applications.",
+    "contentSnippet": "The product, called Base MCP, connects a user’s Base Account to AI clients such as ChatGPT, Claude and Cursor using the Model Context Protocol (MCP), an emerging standard that allows AI systems to securely interface with external tools and applications.",
+    "guid": "58b7ca1a-9253-44b6-a98f-521a4e722684",
+    "categories": [
+      {
+        "_": "Tech",
+        "$": {
+          "domain": "https://www.coindesk.com/tech"
+        }
+      },
+      {
+        "_": "Coinbase",
+        "$": {
+          "domain": "tag"
         }
       },
       {
@@ -23,7 +73,33 @@
         }
       },
       {
-        "_": "Digital Asset Treasury",
+        "_": "News",
+        "$": {
+          "domain": "https://www.coindesk.com/"
+        }
+      }
+    ],
+    "isoDate": "2026-05-26T16:00:00.000Z"
+  },
+  {
+    "creator": "Shaurya Malwa",
+    "title": "XRPL could close its biggest DeFi gap if new AMM amendment passes",
+    "link": "https://www.coindesk.com/tech/2026/05/26/xrpl-could-close-its-biggest-defi-gap-if-new-amm-amendment-passes",
+    "pubDate": "Tue, 26 May 2026 15:34:09 +0000",
+    "content:encoded": "",
+    "dc:creator": "Shaurya Malwa",
+    "content": "A draft proposal filed Tuesday would extend the XRP Ledger's native automated market maker with three swappable curve types, giving liquidity providers more efficient ways to deploy capital and closing one of XRPL DeFi's longest-standing gaps.",
+    "contentSnippet": "A draft proposal filed Tuesday would extend the XRP Ledger's native automated market maker with three swappable curve types, giving liquidity providers more efficient ways to deploy capital and closing one of XRPL DeFi's longest-standing gaps.",
+    "guid": "48ead427-6b94-4a91-8e02-78675ebc2600",
+    "categories": [
+      {
+        "_": "Tech",
+        "$": {
+          "domain": "https://www.coindesk.com/tech"
+        }
+      },
+      {
+        "_": "XRP News",
         "$": {
           "domain": "tag"
         }
@@ -35,155 +111,23 @@
         }
       }
     ],
-    "isoDate": "2026-05-26T13:27:51.000Z"
+    "isoDate": "2026-05-26T15:34:09.000Z"
   },
   {
-    "creator": "CoinDesk Indices",
-    "title": "CoinDesk 20 performance update: SUI drops 1.1%, leading index lower ",
-    "link": "https://www.coindesk.com/coindesk-indices/2026/05/26/coindesk-20-performance-update-sui-drops-1-1-leading-index-lower",
-    "pubDate": "Tue, 26 May 2026 13:18:17 +0000",
+    "creator": "Robin Singh",
+    "title": "The Clarity Act won’t lead to adoption without crypto tax reform",
+    "link": "https://www.coindesk.com/opinion/2026/05/26/the-clarity-act-won-t-lead-to-adoption-without-crypto-tax-reform",
+    "pubDate": "Tue, 26 May 2026 15:19:18 +0000",
     "content:encoded": "",
-    "dc:creator": "CoinDesk Indices",
-    "content": "Cronos (CRO), also down 1.1%, joined Sui (SUI) as an underperformer. ",
-    "contentSnippet": "Cronos (CRO), also down 1.1%, joined Sui (SUI) as an underperformer.",
-    "guid": "c5cae34f-9283-422c-b883-0074b6554aaf",
+    "dc:creator": "Robin Singh",
+    "content": "The legislation is being framed as a turning point for U.S. crypto policy, but there’s a major piece of the puzzle being overlooked, argues Singh.",
+    "contentSnippet": "The legislation is being framed as a turning point for U.S. crypto policy, but there’s a major piece of the puzzle being overlooked, argues Singh.",
+    "guid": "151cd627-632a-4e96-8a98-3c3e4e7fe440",
     "categories": [
       {
-        "_": "CoinDesk Indices",
+        "_": "Opinion",
         "$": {
-          "domain": "https://www.coindesk.com/coindesk-indices"
-        }
-      },
-      {
-        "_": "CoinDesk Indices",
-        "$": {
-          "domain": "tag"
-        }
-      },
-      {
-        "_": "CoinDesk 20",
-        "$": {
-          "domain": "tag"
-        }
-      },
-      {
-        "_": "charts",
-        "$": {
-          "domain": "tag"
-        }
-      },
-      {
-        "_": "Prices",
-        "$": {
-          "domain": "tag"
-        }
-      },
-      {
-        "_": "News",
-        "$": {
-          "domain": "https://www.coindesk.com/"
-        }
-      }
-    ],
-    "isoDate": "2026-05-26T13:18:17.000Z"
-  },
-  {
-    "creator": "James Van Straten",
-    "title": "Strive acquires 1,109 bitcoin, raising total holdings to 16,500 coins",
-    "link": "https://www.coindesk.com/markets/2026/05/26/strive-acquires-1-109-bitcoin-raising-total-holdings-to-16-500-coins",
-    "pubDate": "Tue, 26 May 2026 12:46:02 +0000",
-    "content:encoded": "",
-    "dc:creator": "James Van Straten",
-    "content": "ASST climbs 133% in three months as Strive grows holdings to 16,500 BTC and explores fresh capital raising options.",
-    "contentSnippet": "ASST climbs 133% in three months as Strive grows holdings to 16,500 BTC and explores fresh capital raising options.",
-    "guid": "df6929c6-4a75-45c1-b281-1dce9e0c9f10",
-    "categories": [
-      {
-        "_": "Markets",
-        "$": {
-          "domain": "https://www.coindesk.com/markets"
-        }
-      },
-      {
-        "_": "Bitcoin News",
-        "$": {
-          "domain": "tag"
-        }
-      },
-      {
-        "_": "News",
-        "$": {
-          "domain": "https://www.coindesk.com/"
-        }
-      }
-    ],
-    "isoDate": "2026-05-26T12:46:02.000Z"
-  },
-  {
-    "creator": "James Van Straten",
-    "title": "Strategy taps cash reserve to retire $1.5 billion in convertible debt",
-    "link": "https://www.coindesk.com/markets/2026/05/26/strategy-taps-cash-reserve-to-retire-usd1-5-billion-in-convertible-debt",
-    "pubDate": "Tue, 26 May 2026 12:19:46 +0000",
-    "content:encoded": "",
-    "dc:creator": "James Van Straten",
-    "content": "Michael Saylor and team funded the repurchases using cash as it restructures liabilities tied to its BTC treasury strategy.",
-    "contentSnippet": "Michael Saylor and team funded the repurchases using cash as it restructures liabilities tied to its BTC treasury strategy.",
-    "guid": "a29ec62f-2786-4109-a490-7457d2c651e6",
-    "categories": [
-      {
-        "_": "Markets",
-        "$": {
-          "domain": "https://www.coindesk.com/markets"
-        }
-      },
-      {
-        "_": "Bitcoin News",
-        "$": {
-          "domain": "tag"
-        }
-      },
-      {
-        "_": "News",
-        "$": {
-          "domain": "https://www.coindesk.com/"
-        }
-      }
-    ],
-    "isoDate": "2026-05-26T12:19:46.000Z"
-  },
-  {
-    "creator": "Francisco Rodrigues",
-    "title": "Spain joins growing list of countries shutting out Polymarket and Kalshi",
-    "link": "https://www.coindesk.com/policy/2026/05/26/spain-joins-growing-list-of-countries-shutting-out-polymarket-and-kalshi",
-    "pubDate": "Tue, 26 May 2026 12:06:25 +0000",
-    "content:encoded": "",
-    "dc:creator": "Francisco Rodrigues",
-    "content": "The platforms were blocked for operating without licenses required by Spanish gambling law, citing a lack of safeguards for minors and self-excluded gamblers.",
-    "contentSnippet": "The platforms were blocked for operating without licenses required by Spanish gambling law, citing a lack of safeguards for minors and self-excluded gamblers.",
-    "guid": "c1543ff3-643e-42bf-a0a3-91f7c3d45307",
-    "categories": [
-      {
-        "_": "Policy",
-        "$": {
-          "domain": "https://www.coindesk.com/policy"
-        }
-      },
-      {
-        "_": "Prediction Markets",
-        "$": {
-          "domain": "tag"
-        }
-      },
-      {
-        "_": "Polymarket",
-        "$": {
-          "domain": "tag"
-        }
-      },
-      {
-        "_": "Kalshi",
-        "$": {
-          "domain": "tag"
+          "domain": "https://www.coindesk.com/opinion"
         }
       },
       {
@@ -193,12 +137,56 @@
         }
       },
       {
+        "_": "Clarity Act",
+        "$": {
+          "domain": "tag"
+        }
+      },
+      {
+        "_": "Opinion",
+        "$": {
+          "domain": "https://www.coindesk.com/"
+        }
+      }
+    ],
+    "isoDate": "2026-05-26T15:19:18.000Z"
+  },
+  {
+    "creator": "Krisztian Sandor",
+    "title": "TeraWulf jumps 13% on AI data center expansion in Kentucky",
+    "link": "https://www.coindesk.com/markets/2026/05/26/terawulf-jumps-13-on-ai-data-center-expansion-in-kentucky",
+    "pubDate": "Tue, 26 May 2026 14:48:36 +0000",
+    "content:encoded": "",
+    "dc:creator": "Krisztian Sandor",
+    "content": "The bitcoin miner turned HPC infrastructure developer unveiled plans for a new 1 gigawatt facility in Kentucky aimed at servicing AI workloads.",
+    "contentSnippet": "The bitcoin miner turned HPC infrastructure developer unveiled plans for a new 1 gigawatt facility in Kentucky aimed at servicing AI workloads.",
+    "guid": "c1c48ee6-7a59-4679-81a6-52b802fa4b5a",
+    "categories": [
+      {
+        "_": "Markets",
+        "$": {
+          "domain": "https://www.coindesk.com/markets"
+        }
+      },
+      {
+        "_": "Mining",
+        "$": {
+          "domain": "tag"
+        }
+      },
+      {
+        "_": "Artificial Intelligence",
+        "$": {
+          "domain": "tag"
+        }
+      },
+      {
         "_": "News",
         "$": {
           "domain": "https://www.coindesk.com/"
         }
       }
     ],
-    "isoDate": "2026-05-26T12:06:25.000Z"
+    "isoDate": "2026-05-26T14:48:36.000Z"
   }
 ]
