@@ -1,14 +1,14 @@
 [
   {
     "creator": "James Van Straten",
-    "title": "Bitcoin caught between critical onchain support and an options showdown",
-    "link": "https://www.coindesk.com/markets/2026/05/26/bitcoin-caught-between-critical-onchain-support-and-an-options-showdown",
-    "pubDate": "Tue, 26 May 2026 09:11:06 +0000",
+    "title": "Strive acquires 1,109 bitcoin, raising total holdings to 16,500 coins",
+    "link": "https://www.coindesk.com/markets/2026/05/26/strive-acquires-1-109-bitcoin-raising-total-holdings-to-16-500-coins",
+    "pubDate": "Tue, 26 May 2026 12:46:02 +0000",
     "content:encoded": "",
     "dc:creator": "James Van Straten",
-    "content": "Heavy supply concentration and large options positioning continue to suppress volatility and keep bitcoin range-bound.",
-    "contentSnippet": "Heavy supply concentration and large options positioning continue to suppress volatility and keep bitcoin range-bound.",
-    "guid": "86671983-8ce1-45ea-b9c6-1a3465ec9772",
+    "content": "ASST climbs 133% in three months as Strive grows holdings to 16,500 BTC and explores fresh capital raising options.",
+    "contentSnippet": "ASST climbs 133% in three months as Strive grows holdings to 16,500 BTC and explores fresh capital raising options.",
+    "guid": "df6929c6-4a75-45c1-b281-1dce9e0c9f10",
     "categories": [
       {
         "_": "Markets",
@@ -29,27 +29,27 @@
         }
       }
     ],
-    "isoDate": "2026-05-26T09:11:06.000Z"
+    "isoDate": "2026-05-26T12:46:02.000Z"
   },
   {
-    "creator": "Omkar Godbole",
-    "title": "XRP Ledger to delete NFT junk and patch key bugs in a new upgrade",
-    "link": "https://www.coindesk.com/markets/2026/05/26/xrp-ledger-amendment-to-delete-nft-junk-and-patch-key-bugs-goes-live-tomorrow",
-    "pubDate": "Tue, 26 May 2026 09:06:37 +0000",
+    "creator": "James Van Straten",
+    "title": "Strategy taps cash reserve to retire $1.5 billion in convertible debt",
+    "link": "https://www.coindesk.com/markets/2026/05/26/strategy-taps-cash-reserve-to-retire-usd1-5-billion-in-convertible-debt",
+    "pubDate": "Tue, 26 May 2026 12:19:46 +0000",
     "content:encoded": "",
-    "dc:creator": "Omkar Godbole",
-    "content": "The XRP Ledger is rolling out the fixCleanup3_1_3 upgrade on Wednesday,  to clean up expired NFTs.",
-    "contentSnippet": "The XRP Ledger is rolling out the fixCleanup3_1_3 upgrade on Wednesday,  to clean up expired NFTs.",
-    "guid": "24300460-1c81-4e4f-822f-76a6dddf0121",
+    "dc:creator": "James Van Straten",
+    "content": "Michael Saylor and team funded the repurchases using cash as it restructures liabilities tied to its BTC treasury strategy.",
+    "contentSnippet": "Michael Saylor and team funded the repurchases using cash as it restructures liabilities tied to its BTC treasury strategy.",
+    "guid": "a29ec62f-2786-4109-a490-7457d2c651e6",
     "categories": [
       {
-        "_": "Tech",
+        "_": "Markets",
         "$": {
-          "domain": "https://www.coindesk.com/tech"
+          "domain": "https://www.coindesk.com/markets"
         }
       },
       {
-        "_": "XRP News",
+        "_": "Bitcoin News",
         "$": {
           "domain": "tag"
         }
@@ -61,27 +61,27 @@
         }
       }
     ],
-    "isoDate": "2026-05-26T09:06:37.000Z"
+    "isoDate": "2026-05-26T12:19:46.000Z"
   },
   {
-    "creator": "Sam Reynolds",
-    "title": "Hyperliquid takes a swing at Polymarket with macro outcome bets",
-    "link": "https://www.coindesk.com/markets/2026/05/26/hyperliquid-takes-aim-at-polymarket-with-launch-of-offchain-event-contracts",
-    "pubDate": "Tue, 26 May 2026 06:44:36 +0000",
+    "creator": "Francisco Rodrigues",
+    "title": "Spain joins growing list of countries shutting out Polymarket and Kalshi",
+    "link": "https://www.coindesk.com/policy/2026/05/26/spain-joins-growing-list-of-countries-shutting-out-polymarket-and-kalshi",
+    "pubDate": "Tue, 26 May 2026 12:06:25 +0000",
     "content:encoded": "",
-    "dc:creator": "Sam Reynolds",
-    "content": "The decentralized exchange’s new HIP-4 product lets traders bet on offchain events like inflation and interest-rate decisions, using validators rather than UMA-style external dispute resolution.",
-    "contentSnippet": "The decentralized exchange’s new HIP-4 product lets traders bet on offchain events like inflation and interest-rate decisions, using validators rather than UMA-style external dispute resolution.",
-    "guid": "b4323965-276b-4b08-829a-1ba14016c0f7",
+    "dc:creator": "Francisco Rodrigues",
+    "content": "The platforms were blocked for operating without licenses required by Spanish gambling law, citing a lack of safeguards for minors and self-excluded gamblers.",
+    "contentSnippet": "The platforms were blocked for operating without licenses required by Spanish gambling law, citing a lack of safeguards for minors and self-excluded gamblers.",
+    "guid": "c1543ff3-643e-42bf-a0a3-91f7c3d45307",
     "categories": [
       {
-        "_": "Markets",
+        "_": "Policy",
         "$": {
-          "domain": "https://www.coindesk.com/markets"
+          "domain": "https://www.coindesk.com/policy"
         }
       },
       {
-        "_": "Hyperliquid",
+        "_": "Prediction Markets",
         "$": {
           "domain": "tag"
         }
@@ -93,24 +93,68 @@
         }
       },
       {
+        "_": "Kalshi",
+        "$": {
+          "domain": "tag"
+        }
+      },
+      {
+        "_": "Regulation",
+        "$": {
+          "domain": "tag"
+        }
+      },
+      {
         "_": "News",
         "$": {
           "domain": "https://www.coindesk.com/"
         }
       }
     ],
-    "isoDate": "2026-05-26T06:44:36.000Z"
+    "isoDate": "2026-05-26T12:06:25.000Z"
   },
   {
-    "creator": "Omkar Godbole",
-    "title": "At $322 billion, the stablecoin market value exceeds the FX reserves of 95 nations",
-    "link": "https://www.coindesk.com/markets/2026/05/26/at-usd318-billion-the-stablecoin-market-value-exceeds-the-fx-reserves-of-95-nations",
-    "pubDate": "Tue, 26 May 2026 06:16:35 +0000",
+    "creator": "Shaurya Malwa",
+    "title": "Bitcoin demand gauge sinks to worst level since December as spot buying weakens",
+    "link": "https://www.coindesk.com/markets/2026/05/26/bitcoin-demand-gauge-sinks-to-worst-level-since-december-as-rally-loses-spot-support",
+    "pubDate": "Tue, 26 May 2026 12:03:47 +0000",
     "content:encoded": "",
-    "dc:creator": "Omkar Godbole",
-    "content": "The amount of dollars and other fiat currencies held by users outside traditional banking channels now exceeds the official FX reserves of 95 nations.",
-    "contentSnippet": "The amount of dollars and other fiat currencies held by users outside traditional banking channels now exceeds the official FX reserves of 95 nations.",
-    "guid": "dfd53b2d-413b-4f99-a35d-b96a511ea3b0",
+    "dc:creator": "Shaurya Malwa",
+    "content": "CryptoQuant’s 30-day apparent demand indicator is negative, signaling that buyers aren’t absorbing the available supply and leaving the market vulnerable.",
+    "contentSnippet": "CryptoQuant’s 30-day apparent demand indicator is negative, signaling that buyers aren’t absorbing the available supply and leaving the market vulnerable.",
+    "guid": "e6b78bdb-ac10-4789-b7c4-99729cd5036e",
+    "categories": [
+      {
+        "_": "Markets",
+        "$": {
+          "domain": "https://www.coindesk.com/markets"
+        }
+      },
+      {
+        "_": "Bitcoin News",
+        "$": {
+          "domain": "tag"
+        }
+      },
+      {
+        "_": "News",
+        "$": {
+          "domain": "https://www.coindesk.com/"
+        }
+      }
+    ],
+    "isoDate": "2026-05-26T12:03:47.000Z"
+  },
+  {
+    "creator": "Francisco Rodrigues",
+    "title": "StablR freezes USDR and EURR after attacker mints $13.5 million in unbacked tokens",
+    "link": "https://www.coindesk.com/markets/2026/05/26/stablr-freezes-usdr-and-eurr-after-attacker-mints-usd13-5-million-in-unbacked-tokens",
+    "pubDate": "Tue, 26 May 2026 11:25:23 +0000",
+    "content:encoded": "",
+    "dc:creator": "Francisco Rodrigues",
+    "content": "The breach, linked to a 1-of-3 multisig wallet weakness, allowed attackers to compromise a key and mint $13.5 million in unbacked tokens, netting them $2.8 million.",
+    "contentSnippet": "The breach, linked to a 1-of-3 multisig wallet weakness, allowed attackers to compromise a key and mint $13.5 million in unbacked tokens, netting them $2.8 million.",
+    "guid": "27b8a2b2-0a04-40ae-ae86-8e6a7d0d0094",
     "categories": [
       {
         "_": "Markets",
@@ -131,32 +175,6 @@
         }
       }
     ],
-    "isoDate": "2026-05-26T06:16:35.000Z"
-  },
-  {
-    "creator": "CoinDesk",
-    "title": "Ondo Finance founder Nathan Allman dies unexpectedly",
-    "link": "https://www.coindesk.com/markets/2026/05/26/ondo-finance-founder-nathan-allman-passes-away",
-    "pubDate": "Tue, 26 May 2026 06:13:58 +0000",
-    "content:encoded": "",
-    "dc:creator": "CoinDesk",
-    "content": "Tokenized real-world assets firm Ondo Finance announced the unexpected death of founder Nathan Allman on Tuesday, with longtime president Ian De Bode stepping in as CEO.",
-    "contentSnippet": "Tokenized real-world assets firm Ondo Finance announced the unexpected death of founder Nathan Allman on Tuesday, with longtime president Ian De Bode stepping in as CEO.",
-    "guid": "b9de3319-0002-442f-96bc-2560f7b6c35f",
-    "categories": [
-      {
-        "_": "Markets",
-        "$": {
-          "domain": "https://www.coindesk.com/markets"
-        }
-      },
-      {
-        "_": "News",
-        "$": {
-          "domain": "https://www.coindesk.com/"
-        }
-      }
-    ],
-    "isoDate": "2026-05-26T06:13:58.000Z"
+    "isoDate": "2026-05-26T11:25:23.000Z"
   }
 ]
