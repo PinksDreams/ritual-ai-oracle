@@ -1,14 +1,14 @@
 [
   {
-    "creator": "Francisco Rodrigues",
-    "title": "NEAR price rally gains momentum as cross-chain product activity fuels further 15% jump",
-    "link": "https://www.coindesk.com/markets/2026/05/25/near-price-rally-gains-momentum-as-cross-chain-product-activity-fuels-further-15-jump",
-    "pubDate": "Mon, 25 May 2026 17:38:39 +0000",
+    "creator": "James Van Straten",
+    "title": "Bitcoin caught between critical onchain support and an options showdown",
+    "link": "https://www.coindesk.com/markets/2026/05/26/bitcoin-caught-between-critical-onchain-support-and-an-options-showdown",
+    "pubDate": "Tue, 26 May 2026 09:11:06 +0000",
     "content:encoded": "",
-    "dc:creator": "Francisco Rodrigues",
-    "content": "The rally is fueled by NEAR Intents, the cross-chain system that has processed over $19 billion in volume and generated $32 million in fees.",
-    "contentSnippet": "The rally is fueled by NEAR Intents, the cross-chain system that has processed over $19 billion in volume and generated $32 million in fees.",
-    "guid": "10283bcd-956a-4a31-bcf8-35f3d177f936",
+    "dc:creator": "James Van Straten",
+    "content": "Heavy supply concentration and large options positioning continue to suppress volatility and keep bitcoin range-bound.",
+    "contentSnippet": "Heavy supply concentration and large options positioning continue to suppress volatility and keep bitcoin range-bound.",
+    "guid": "86671983-8ce1-45ea-b9c6-1a3465ec9772",
     "categories": [
       {
         "_": "Markets",
@@ -17,7 +17,7 @@
         }
       },
       {
-        "_": "Crypto News",
+        "_": "Bitcoin News",
         "$": {
           "domain": "tag"
         }
@@ -29,23 +29,61 @@
         }
       }
     ],
-    "isoDate": "2026-05-25T17:38:39.000Z"
+    "isoDate": "2026-05-26T09:11:06.000Z"
   },
   {
-    "creator": "Francisco Rodrigues",
-    "title": "Indonesia blocks Polymarket, calling prediction market online gambling in disguise",
-    "link": "https://www.coindesk.com/policy/2026/05/25/indonesia-blocks-polymarket-calling-prediction-market-online-gambling-in-disguise",
-    "pubDate": "Mon, 25 May 2026 17:04:49 +0000",
+    "creator": "Omkar Godbole",
+    "title": "XRP Ledger to delete NFT junk and patch key bugs in a new upgrade",
+    "link": "https://www.coindesk.com/markets/2026/05/26/xrp-ledger-amendment-to-delete-nft-junk-and-patch-key-bugs-goes-live-tomorrow",
+    "pubDate": "Tue, 26 May 2026 09:06:37 +0000",
     "content:encoded": "",
-    "dc:creator": "Francisco Rodrigues",
-    "content": "Authorities stated that using crypto or blockchain doesn't change platforms that let users wager on uncertain outcomes from being gambling products.",
-    "contentSnippet": "Authorities stated that using crypto or blockchain doesn't change platforms that let users wager on uncertain outcomes from being gambling products.",
-    "guid": "8a62e215-6196-4526-b10f-b24adb10e9ce",
+    "dc:creator": "Omkar Godbole",
+    "content": "The XRP Ledger is rolling out the fixCleanup3_1_3 upgrade on Wednesday,  to clean up expired NFTs.",
+    "contentSnippet": "The XRP Ledger is rolling out the fixCleanup3_1_3 upgrade on Wednesday,  to clean up expired NFTs.",
+    "guid": "24300460-1c81-4e4f-822f-76a6dddf0121",
     "categories": [
       {
-        "_": "Policy",
+        "_": "Tech",
         "$": {
-          "domain": "https://www.coindesk.com/policy"
+          "domain": "https://www.coindesk.com/tech"
+        }
+      },
+      {
+        "_": "XRP News",
+        "$": {
+          "domain": "tag"
+        }
+      },
+      {
+        "_": "News",
+        "$": {
+          "domain": "https://www.coindesk.com/"
+        }
+      }
+    ],
+    "isoDate": "2026-05-26T09:06:37.000Z"
+  },
+  {
+    "creator": "Sam Reynolds",
+    "title": "Hyperliquid takes a swing at Polymarket with macro outcome bets",
+    "link": "https://www.coindesk.com/markets/2026/05/26/hyperliquid-takes-aim-at-polymarket-with-launch-of-offchain-event-contracts",
+    "pubDate": "Tue, 26 May 2026 06:44:36 +0000",
+    "content:encoded": "",
+    "dc:creator": "Sam Reynolds",
+    "content": "The decentralized exchange’s new HIP-4 product lets traders bet on offchain events like inflation and interest-rate decisions, using validators rather than UMA-style external dispute resolution.",
+    "contentSnippet": "The decentralized exchange’s new HIP-4 product lets traders bet on offchain events like inflation and interest-rate decisions, using validators rather than UMA-style external dispute resolution.",
+    "guid": "b4323965-276b-4b08-829a-1ba14016c0f7",
+    "categories": [
+      {
+        "_": "Markets",
+        "$": {
+          "domain": "https://www.coindesk.com/markets"
+        }
+      },
+      {
+        "_": "Hyperliquid",
+        "$": {
+          "domain": "tag"
         }
       },
       {
@@ -61,18 +99,18 @@
         }
       }
     ],
-    "isoDate": "2026-05-25T17:04:49.000Z"
+    "isoDate": "2026-05-26T06:44:36.000Z"
   },
   {
-    "creator": "Francisco Rodrigues",
-    "title": "Bitcoin, crypto prices tick up as US-Iran peace deal odds climb",
-    "link": "https://www.coindesk.com/markets/2026/05/25/bitcoin-crypto-prices-tick-up-as-us-iran-peace-deal-odds-climb",
-    "pubDate": "Mon, 25 May 2026 16:46:45 +0000",
+    "creator": "Omkar Godbole",
+    "title": "At $322 billion, the stablecoin market value exceeds the FX reserves of 95 nations",
+    "link": "https://www.coindesk.com/markets/2026/05/26/at-usd318-billion-the-stablecoin-market-value-exceeds-the-fx-reserves-of-95-nations",
+    "pubDate": "Tue, 26 May 2026 06:16:35 +0000",
     "content:encoded": "",
-    "dc:creator": "Francisco Rodrigues",
-    "content": "Iranian negotiators arrived in Doha for talks, focusing on the Strait of Hormuz and highly enriched uranium, as Pakistan and Qatar are mediating.",
-    "contentSnippet": "Iranian negotiators arrived in Doha for talks, focusing on the Strait of Hormuz and highly enriched uranium, as Pakistan and Qatar are mediating.",
-    "guid": "ba229b43-599e-45e2-9490-b6c681df96dc",
+    "dc:creator": "Omkar Godbole",
+    "content": "The amount of dollars and other fiat currencies held by users outside traditional banking channels now exceeds the official FX reserves of 95 nations.",
+    "contentSnippet": "The amount of dollars and other fiat currencies held by users outside traditional banking channels now exceeds the official FX reserves of 95 nations.",
+    "guid": "dfd53b2d-413b-4f99-a35d-b96a511ea3b0",
     "categories": [
       {
         "_": "Markets",
@@ -81,7 +119,7 @@
         }
       },
       {
-        "_": "Crypto News",
+        "_": "Stablecoins",
         "$": {
           "domain": "tag"
         }
@@ -93,50 +131,18 @@
         }
       }
     ],
-    "isoDate": "2026-05-25T16:46:45.000Z"
+    "isoDate": "2026-05-26T06:16:35.000Z"
   },
   {
-    "creator": "Francisco Rodrigues",
-    "title": "Buterin says Ethereum Foundation will shrink, sell less ETH, and focus on 'CROPS'",
-    "link": "https://www.coindesk.com/web3/2026/05/25/buterin-says-ethereum-foundation-will-shrink-sell-less-eth-and-focus-on-crops",
-    "pubDate": "Mon, 25 May 2026 15:51:37 +0000",
+    "creator": "CoinDesk",
+    "title": "Ondo Finance founder Nathan Allman dies unexpectedly",
+    "link": "https://www.coindesk.com/markets/2026/05/26/ondo-finance-founder-nathan-allman-passes-away",
+    "pubDate": "Tue, 26 May 2026 06:13:58 +0000",
     "content:encoded": "",
-    "dc:creator": "Francisco Rodrigues",
-    "content": "Buterin's influence in the EF will decrease as the board expands. He framed the EF as \"one node, with a defined purpose,\" not the center of Ethereum.",
-    "contentSnippet": "Buterin's influence in the EF will decrease as the board expands. He framed the EF as \"one node, with a defined purpose,\" not the center of Ethereum.",
-    "guid": "ab7dd9b6-b5ca-43cc-95f2-10b76d77f7b8",
-    "categories": [
-      {
-        "_": "Web3",
-        "$": {
-          "domain": "https://www.coindesk.com/web3"
-        }
-      },
-      {
-        "_": "Ethereum News",
-        "$": {
-          "domain": "tag"
-        }
-      },
-      {
-        "_": "News",
-        "$": {
-          "domain": "https://www.coindesk.com/"
-        }
-      }
-    ],
-    "isoDate": "2026-05-25T15:51:37.000Z"
-  },
-  {
-    "creator": "Francisco Rodrigues",
-    "title": "PCE, jobless claims and housing data test Fed cut hopes: Crypto Week Ahead",
-    "link": "https://www.coindesk.com/markets/2026/05/25/pce-jobless-claims-and-housing-data-test-fed-cut-hopes-crypto-week-ahead",
-    "pubDate": "Mon, 25 May 2026 12:53:49 +0000",
-    "content:encoded": "",
-    "dc:creator": "Francisco Rodrigues",
-    "content": "Your look at what's coming in the week starting May 25.",
-    "contentSnippet": "Your look at what's coming in the week starting May 25.",
-    "guid": "95754fc4-b9f5-4ba8-b634-0bfadf807344",
+    "dc:creator": "CoinDesk",
+    "content": "Tokenized real-world assets firm Ondo Finance announced the unexpected death of founder Nathan Allman on Tuesday, with longtime president Ian De Bode stepping in as CEO.",
+    "contentSnippet": "Tokenized real-world assets firm Ondo Finance announced the unexpected death of founder Nathan Allman on Tuesday, with longtime president Ian De Bode stepping in as CEO.",
+    "guid": "b9de3319-0002-442f-96bc-2560f7b6c35f",
     "categories": [
       {
         "_": "Markets",
@@ -145,18 +151,12 @@
         }
       },
       {
-        "_": "week ahead",
-        "$": {
-          "domain": "tag"
-        }
-      },
-      {
         "_": "News",
         "$": {
           "domain": "https://www.coindesk.com/"
         }
       }
     ],
-    "isoDate": "2026-05-25T12:53:49.000Z"
+    "isoDate": "2026-05-26T06:13:58.000Z"
   }
 ]
