@@ -1,5 +1,93 @@
 [
   {
+    "creator": "Krisztian Sandor",
+    "title": "Bitmine made its largest ETH purchase this year despite Tom Lee's slowdown suggestion",
+    "link": "https://www.coindesk.com/business/2026/05/26/bitmine-made-its-largest-eth-purchase-this-year-despite-tom-lee-s-slowdown-suggestion",
+    "pubDate": "Tue, 26 May 2026 13:27:51 +0000",
+    "content:encoded": "",
+    "dc:creator": "Krisztian Sandor",
+    "content": "The company bought 111,942 ether last week worth $237 million, ramping up purchases to take advantage of ETH's drop below $2,200.",
+    "contentSnippet": "The company bought 111,942 ether last week worth $237 million, ramping up purchases to take advantage of ETH's drop below $2,200.",
+    "guid": "118e451a-0f5e-4c44-921f-49954c27fd9a",
+    "categories": [
+      {
+        "_": "Finance",
+        "$": {
+          "domain": "https://www.coindesk.com/business"
+        }
+      },
+      {
+        "_": "Ethereum News",
+        "$": {
+          "domain": "tag"
+        }
+      },
+      {
+        "_": "Digital Asset Treasury",
+        "$": {
+          "domain": "tag"
+        }
+      },
+      {
+        "_": "News",
+        "$": {
+          "domain": "https://www.coindesk.com/"
+        }
+      }
+    ],
+    "isoDate": "2026-05-26T13:27:51.000Z"
+  },
+  {
+    "creator": "CoinDesk Indices",
+    "title": "CoinDesk 20 performance update: SUI drops 1.1%, leading index lower ",
+    "link": "https://www.coindesk.com/coindesk-indices/2026/05/26/coindesk-20-performance-update-sui-drops-1-1-leading-index-lower",
+    "pubDate": "Tue, 26 May 2026 13:18:17 +0000",
+    "content:encoded": "",
+    "dc:creator": "CoinDesk Indices",
+    "content": "Cronos (CRO), also down 1.1%, joined Sui (SUI) as an underperformer. ",
+    "contentSnippet": "Cronos (CRO), also down 1.1%, joined Sui (SUI) as an underperformer.",
+    "guid": "c5cae34f-9283-422c-b883-0074b6554aaf",
+    "categories": [
+      {
+        "_": "CoinDesk Indices",
+        "$": {
+          "domain": "https://www.coindesk.com/coindesk-indices"
+        }
+      },
+      {
+        "_": "CoinDesk Indices",
+        "$": {
+          "domain": "tag"
+        }
+      },
+      {
+        "_": "CoinDesk 20",
+        "$": {
+          "domain": "tag"
+        }
+      },
+      {
+        "_": "charts",
+        "$": {
+          "domain": "tag"
+        }
+      },
+      {
+        "_": "Prices",
+        "$": {
+          "domain": "tag"
+        }
+      },
+      {
+        "_": "News",
+        "$": {
+          "domain": "https://www.coindesk.com/"
+        }
+      }
+    ],
+    "isoDate": "2026-05-26T13:18:17.000Z"
+  },
+  {
     "creator": "James Van Straten",
     "title": "Strive acquires 1,109 bitcoin, raising total holdings to 16,500 coins",
     "link": "https://www.coindesk.com/markets/2026/05/26/strive-acquires-1-109-bitcoin-raising-total-holdings-to-16-500-coins",
@@ -112,69 +200,5 @@
       }
     ],
     "isoDate": "2026-05-26T12:06:25.000Z"
-  },
-  {
-    "creator": "Shaurya Malwa",
-    "title": "Bitcoin demand gauge sinks to worst level since December as spot buying weakens",
-    "link": "https://www.coindesk.com/markets/2026/05/26/bitcoin-demand-gauge-sinks-to-worst-level-since-december-as-rally-loses-spot-support",
-    "pubDate": "Tue, 26 May 2026 12:03:47 +0000",
-    "content:encoded": "",
-    "dc:creator": "Shaurya Malwa",
-    "content": "CryptoQuant’s 30-day apparent demand indicator is negative, signaling that buyers aren’t absorbing the available supply and leaving the market vulnerable.",
-    "contentSnippet": "CryptoQuant’s 30-day apparent demand indicator is negative, signaling that buyers aren’t absorbing the available supply and leaving the market vulnerable.",
-    "guid": "e6b78bdb-ac10-4789-b7c4-99729cd5036e",
-    "categories": [
-      {
-        "_": "Markets",
-        "$": {
-          "domain": "https://www.coindesk.com/markets"
-        }
-      },
-      {
-        "_": "Bitcoin News",
-        "$": {
-          "domain": "tag"
-        }
-      },
-      {
-        "_": "News",
-        "$": {
-          "domain": "https://www.coindesk.com/"
-        }
-      }
-    ],
-    "isoDate": "2026-05-26T12:03:47.000Z"
-  },
-  {
-    "creator": "Francisco Rodrigues",
-    "title": "StablR freezes USDR and EURR after attacker mints $13.5 million in unbacked tokens",
-    "link": "https://www.coindesk.com/markets/2026/05/26/stablr-freezes-usdr-and-eurr-after-attacker-mints-usd13-5-million-in-unbacked-tokens",
-    "pubDate": "Tue, 26 May 2026 11:25:23 +0000",
-    "content:encoded": "",
-    "dc:creator": "Francisco Rodrigues",
-    "content": "The breach, linked to a 1-of-3 multisig wallet weakness, allowed attackers to compromise a key and mint $13.5 million in unbacked tokens, netting them $2.8 million.",
-    "contentSnippet": "The breach, linked to a 1-of-3 multisig wallet weakness, allowed attackers to compromise a key and mint $13.5 million in unbacked tokens, netting them $2.8 million.",
-    "guid": "27b8a2b2-0a04-40ae-ae86-8e6a7d0d0094",
-    "categories": [
-      {
-        "_": "Markets",
-        "$": {
-          "domain": "https://www.coindesk.com/markets"
-        }
-      },
-      {
-        "_": "Stablecoins",
-        "$": {
-          "domain": "tag"
-        }
-      },
-      {
-        "_": "News",
-        "$": {
-          "domain": "https://www.coindesk.com/"
-        }
-      }
-    ],
-    "isoDate": "2026-05-26T11:25:23.000Z"
   }
 ]
