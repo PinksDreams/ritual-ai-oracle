@@ -17,7 +17,8 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+          persist-credentials: true
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -39,6 +40,12 @@ jobs:
 
           git add frontend/public/news.json
 
-          git commit -m "update news feed" || echo "No changes"
+          git commit -m "update news feed $(date -u)" || echo "No changes"
 
-          git push origin main
+      - name: Sync with remote (prevent conflicts)
+        run: |
+          git pull --rebase origin main || true
+
+      - name: Push changes
+        run: |
+          git push origin main || echo "No changes to push"
