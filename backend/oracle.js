@@ -89,8 +89,6 @@ async function analyzeSentiment() {
     console.log("SUCCESS");
     console.log("TX:", tx.hash);
 
-    console.log("\nNext update in 5 minutes...\n");
-
   } catch (error) {
 
     console.error("\nOracle Error:\n");
@@ -102,9 +100,3 @@ async function analyzeSentiment() {
 }
 
 analyzeSentiment();
-
-setInterval(() => {
-
-  analyzeSentiment();
-
-}, 5 * 60 * 1000);
