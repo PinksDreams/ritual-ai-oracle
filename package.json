@@ -1,13 +1,16 @@
 {
   "name": "ritual-ai-oracle",
   "version": "1.0.0",
-  "main": "backend/oracle.js",
+  "main": "backend/server.js",
   "scripts": {
-    "start": "node backend/oracle.js"
+    "start": "node backend/server.js",
+    "dev": "node backend/server.js"
   },
   "dependencies": {
-    "dotenv": "^17.2.0",
-    "ethers": "^6.15.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "ethers": "^6.16.0",
+    "express": "^4.19.2",
     "rss-parser": "^3.13.0",
     "sentiment": "^5.0.2"
   }
