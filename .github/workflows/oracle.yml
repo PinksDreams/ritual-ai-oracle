@@ -2,7 +2,7 @@ name: Ritual AI Oracle
 
 permissions:
   contents: write
-  
+
 on:
   schedule:
     - cron: "*/5 * * * *"
