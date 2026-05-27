@@ -2,75 +2,52 @@
 
 import { useEffect, useState } from "react";
 
-type OracleData = {
-  success: boolean;
-  score: number;
-  label: string;
-  headlines: string;
-};
-
 export default function Home() {
-  const [data, setData] = useState<OracleData | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  async function loadOracle() {
-    try {
-      setError(null);
-
-      const res = await fetch("/api/oracle"); 
-      if (!res.ok) throw new Error("API error");
-
-      const json = await res.json();
-      setData(json);
-    } catch (err) {
-      console.error(err);
-      setError("Failed to load oracle");
-    } finally {
-      setLoading(false);
-    }
-  }
+  const [data, setData] = useState<any>(null);
 
   useEffect(() => {
-    loadOracle();
-
-    const interval = setInterval(loadOracle, 10000);
-    return () => clearInterval(interval);
+    fetch("/api/oracle")
+      .then((res) => res.json())
+      .then(setData);
   }, []);
 
-  if (loading) return <div>Loading Oracle...</div>;
-  if (error) return <div style={{ color: "red" }}>{error}</div>;
-  if (!data) return <div>No data</div>;
+  if (!data) {
+    return (
+      <div className="text-center mt-20 text-gray-400">
+        Summoning Oracle...
+      </div>
+    );
+  }
 
   return (
-    <div style={{ padding: 24, fontFamily: "Arial" }}>
-      <h1>🧠 Ritual AI Oracle</h1>
+    <div className="flex items-center justify-center min-h-screen p-6">
+      <div className="w-full max-w-xl rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6 shadow-xl">
+        
+        <h1 className="text-2xl font-bold mb-4">
+          🧠 Ritual AI Oracle
+        </h1>
 
-      <div style={{ marginTop: 20 }}>
-        <h2>Sentiment</h2>
-        <p>Score: {data.score}</p>
-        <p>
-          Label:{" "}
-          <b
-            style={{
-              color:
-                data.label === "BULLISH"
-                  ? "green"
-                  : data.label === "BEARISH"
-                  ? "red"
-                  : "gray",
-            }}
-          >
-            {data.label}
-          </b>
-        </p>
-      </div>
+        <div className="mb-4">
+          <p className="text-sm text-gray-400">Sentiment</p>
+          <p className="text-xl font-semibold">
+            Score: {data.score}
+          </p>
+          <p className="text-sm uppercase tracking-wider">
+            Label: {data.label}
+          </p>
+        </div>
 
-      <div style={{ marginTop: 20 }}>
-        <h2>Headlines</h2>
-        <pre style={{ whiteSpace: "pre-wrap" }}>
-          {data.headlines}
-        </pre>
+        <div>
+          <p className="text-sm text-gray-400 mb-2">Headlines</p>
+          <ul className="space-y-2 text-sm">
+            {data.headlines?.map((h: string, i: number) => (
+              <li key={i} className="text-gray-200">
+                • {h}
+              </li>
+            ))}
+          </ul>
+        </div>
+
       </div>
     </div>
   );
