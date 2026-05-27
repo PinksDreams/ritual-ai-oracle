@@ -53,10 +53,14 @@ export default function Home() {
       {/* LOGO TOP LEFT */}
       <div className="absolute top-6 left-6">
         <img
-          src="/logo.png"
-          alt="Ritual Logo"
-          className="w-11 h-11 object-contain drop-shadow-[0_0_18px_rgba(168,85,247,0.9)] hover:drop-shadow-[0_0_25px_rgba(236,72,153,0.9)] transition"
-        />
+  src="/logo.png"
+  alt="Ritual Logo"
+  className="w-24 h-24 object-contain
+  drop-shadow-[0_0_25px_rgba(168,85,247,0.9)]
+  drop-shadow-[0_0_60px_rgba(236,72,153,0.4)]
+  hover:scale-105 transition duration-300
+  filter"
+/>
       </div>
 
       {/* MAIN CARD */}
