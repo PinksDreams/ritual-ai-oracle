@@ -4,14 +4,36 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const [data, setData] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+
+  const loadOracle = async () => {
+    try {
+      const res = await fetch("/api/oracle", {
+        cache: "no-store",
+      });
+
+      const json = await res.json();
+      setData(json);
+    } catch (e) {
+      console.error("Oracle fetch failed:", e);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
-    fetch("/api/oracle")
-      .then((res) => res.json())
-      .then(setData);
+    // первый загруз
+    loadOracle();
+
+    // авто-обновление каждые 15 секунд
+    const interval = setInterval(() => {
+      loadOracle();
+    }, 15000);
+
+    return () => clearInterval(interval);
   }, []);
 
-  if (!data) {
+  if (loading || !data) {
     return (
       <div className="min-h-screen flex items-center justify-center text-gray-400">
         Summoning Oracle...
@@ -39,13 +61,15 @@ export default function Home() {
             <p className="text-2xl font-bold">{data.score}</p>
           </div>
 
-          <div className={`p-4 rounded-xl border text-center ${
-            isBullish
-              ? "bg-green-500/10 border-green-500/30 text-green-300"
-              : isBearish
-              ? "bg-red-500/10 border-red-500/30 text-red-300"
-              : "bg-gray-500/10 border-gray-500/30 text-gray-300"
-          }`}>
+          <div
+            className={`p-4 rounded-xl border text-center ${
+              isBullish
+                ? "bg-green-500/10 border-green-500/30 text-green-300"
+                : isBearish
+                ? "bg-red-500/10 border-red-500/30 text-red-300"
+                : "bg-gray-500/10 border-gray-500/30 text-gray-300"
+            }`}
+          >
             <p className="text-sm text-gray-400">Signal</p>
             <p className="text-xl font-bold">{data.label}</p>
           </div>
@@ -59,7 +83,7 @@ export default function Home() {
           </h2>
 
           <div className="space-y-3">
-            {data.headlines?.map((h: string, i: number) => (
+            {(data.headlines ?? []).map((h: string, i: number) => (
               <div
                 key={i}
                 className="p-3 rounded-lg bg-white/5 border border-white/10 text-sm leading-relaxed hover:bg-white/10 transition"
