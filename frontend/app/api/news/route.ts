@@ -3,15 +3,28 @@ import { NextResponse } from "next/server";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const news = [
-    "Bitcoin volatility increases as traders await macro data",
-    "AI trading systems dominate short-term momentum",
-    "Crypto market reacts to ETF inflows and liquidity shifts",
-    "Federal Reserve signals impact risk assets",
-  ];
+  try {
+    const res = await fetch(
+      "https://api.gdeltproject.org/api/v2/doc/doc?query=bitcoin%20OR%20crypto&mode=ArtList&format=json"
+    );
 
-  return NextResponse.json({
-    news,
-    updatedAt: new Date().toISOString(),
-  });
+    const data = await res.json();
+
+    const news =
+      data?.articles?.slice(0, 5).map((a: any) => a.title) || [];
+
+    return NextResponse.json({
+      news,
+      updatedAt: new Date().toISOString(),
+    });
+  } catch (e) {
+    return NextResponse.json({
+      news: [
+        "Market data temporarily unavailable",
+        "Using fallback system",
+      ],
+      error: "GDELT fetch failed",
+      updatedAt: new Date().toISOString(),
+    });
+  }
 }
