@@ -1,47 +1,24 @@
-import Parser from "rss-parser";
-import Sentiment from "sentiment";
+import { NextResponse } from "next/server";
 
-const parser = new Parser();
-const sentiment = new Sentiment();
+export const dynamic = "force-dynamic";
 
 export async function GET() {
-  try {
-    const feed = await parser.parseURL(
-      "https://www.coindesk.com/arc/outboundfeeds/rss/"
-    );
+  const mockHeadlines = [
+    "Bitcoin volatility increases as traders await Fed signals",
+    "AI-driven hedge funds outperform traditional markets",
+    "Crypto sentiment shifts after ETF inflows surge",
+  ];
 
-    const items = feed.items.slice(0, 5);
+  const score =
+    Math.floor(Math.random() * 5) - 2; // -2 ... +2
 
-    const headlines = items.map((item) => item.title).join(" ");
+  const label =
+    score > 0 ? "BULLISH" : score < 0 ? "BEARISH" : "NEUTRAL";
 
-    const result = sentiment.analyze(headlines);
-
-    let label = "NEUTRAL";
-
-    if (result.score > 0) {
-      label = "BULLISH";
-    } else if (result.score < 0) {
-      label = "BEARISH";
-    }
-
-    return Response.json({
-      success: true,
-      score: result.score,
-      label,
-      headlines,
-      items,
-    });
-  } catch (error: any) {
-    console.error(error);
-
-    return Response.json(
-      {
-        success: false,
-        error: error.message,
-      },
-      {
-        status: 500,
-      }
-    );
-  }
+  return NextResponse.json({
+    score,
+    label,
+    headlines: mockHeadlines,
+    updatedAt: new Date().toISOString(),
+  });
 }
