@@ -3,21 +3,15 @@ import { NextResponse } from "next/server";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  try {
-    const res = await fetch("https://example.com/api/news", {
-      cache: "no-store",
-    });
+  const news = [
+    "Bitcoin volatility increases as traders await macro data",
+    "AI trading systems dominate short-term momentum",
+    "Crypto market reacts to ETF inflows and liquidity shifts",
+    "Federal Reserve signals impact risk assets",
+  ];
 
-    const news = await res.json();
-
-    return NextResponse.json({
-      news,
-      updatedAt: new Date().toISOString(),
-    });
-  } catch (error) {
-    return NextResponse.json({
-      news: [],
-      error: "Failed to fetch news",
-    });
-  }
+  return NextResponse.json({
+    news,
+    updatedAt: new Date().toISOString(),
+  });
 }
