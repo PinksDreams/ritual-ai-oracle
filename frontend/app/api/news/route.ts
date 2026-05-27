@@ -1,65 +1,51 @@
 import { NextResponse } from "next/server";
-import { XMLParser } from "fast-xml-parser";
 
 export const dynamic = "force-dynamic";
 
-const RSS_FEEDS = [
+const FEEDS = [
   "https://www.coindesk.com/arc/outboundfeeds/rss/",
   "https://cointelegraph.com/rss",
   "https://bitcoinmagazine.com/.rss/full/",
 ];
 
-async function fetchRSS(url: string) {
+async function fetchFeed(url: string) {
   const res = await fetch(url, {
     headers: {
       "User-Agent": "Mozilla/5.0",
+      "cache-control": "no-cache",
     },
   });
 
-  const xml = await res.text();
+  const text = await res.text();
 
-  const parser = new XMLParser({
-    ignoreAttributes: true,
-  });
-
-  const data = parser.parse(xml);
-
-  const items =
-    data?.rss?.channel?.item ||
-    data?.feed?.entry ||
-    [];
-
-  const normalized = (Array.isArray(items) ? items : [items])
-    .slice(0, 5)
-    .map((item: any) => item.title)
+  // более точный extraction (берём item blocks)
+  const items = text
+    .split("<item>")
+    .slice(1)
+    .map((block) => {
+      const match = block.match(/<title><!\[CDATA\[(.*?)\]\]><\/title>|<title>(.*?)<\/title>/);
+      return match?.[1] || match?.[2];
+    })
     .filter(Boolean);
 
-  return normalized;
+  return items.slice(0, 5);
 }
 
 export async function GET() {
   try {
-    const results = await Promise.all(
-      RSS_FEEDS.map(fetchRSS)
-    );
+    const results = await Promise.all(FEEDS.map(fetchFeed));
 
-    const news = results
-      .flat()
-      .slice(0, 5);
+    const news = Array.from(new Set(results.flat())).slice(0, 5);
 
     return NextResponse.json({
       news,
       updatedAt: new Date().toISOString(),
-      source: "rss-production",
+      source: "rss-fixed-v2",
     });
   } catch (e) {
     return NextResponse.json({
-      news: [
-        "Market data temporarily unavailable",
-        "RSS system fallback active",
-      ],
-      error: "RSS fetch failed",
-      updatedAt: new Date().toISOString(),
+      news: ["Fallback active", "RSS parsing failed"],
+      error: "RSS parse error",
     });
   }
 }
