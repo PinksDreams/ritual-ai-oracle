@@ -50,17 +50,14 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white p-6 relative overflow-hidden">
 
-      {/* TOP LEFT LOGO */}
-      <div className="absolute top-6 left-6 opacity-100">
-  <img
-    src="/logo.png"
-    alt="Ritual Logo"
-    className="w-11 h-11 object-contain filter brightness-0 invert opacity-90
-    drop-shadow-[0_0_18px_rgba(168,85,247,0.9)]
-    hover:drop-shadow-[0_0_25px_rgba(236,72,153,0.9)]
-    transition"
-  />
-</div>
+      {/* LOGO TOP LEFT */}
+      <div className="absolute top-6 left-6">
+        <img
+          src="/logo.png"
+          alt="Ritual Logo"
+          className="w-11 h-11 object-contain drop-shadow-[0_0_18px_rgba(168,85,247,0.9)] hover:drop-shadow-[0_0_25px_rgba(236,72,153,0.9)] transition"
+        />
+      </div>
 
       {/* MAIN CARD */}
       <div className="flex items-center justify-center min-h-screen">
