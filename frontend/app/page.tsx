@@ -6,16 +6,21 @@ export default function Home() {
   const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
-  const loadOracle = async () => {
+  const loadNews = async () => {
     try {
-      const res = await fetch("/api/oracle", {
+      const res = await fetch("/api/news", {
         cache: "no-store",
       });
 
       const json = await res.json();
-      setData(json);
+
+      setData({
+        score: 0,
+        label: "NEUTRAL",
+        headlines: json.news,
+      });
     } catch (e) {
-      console.error("Oracle fetch failed:", e);
+      console.error("News fetch failed:", e);
     } finally {
       setLoading(false);
     }
@@ -23,11 +28,11 @@ export default function Home() {
 
   useEffect(() => {
     // первый загруз
-    loadOracle();
+    loadNews();
 
     // авто-обновление каждые 15 секунд
     const interval = setInterval(() => {
-      loadOracle();
+      loadNews();
     }, 15000);
 
     return () => clearInterval(interval);
@@ -36,7 +41,7 @@ export default function Home() {
   if (loading || !data) {
     return (
       <div className="min-h-screen flex items-center justify-center text-gray-400">
-        Summoning Oracle...
+        Loading market signals...
       </div>
     );
   }
@@ -79,7 +84,7 @@ export default function Home() {
         {/* HEADLINES */}
         <div>
           <h2 className="text-lg font-semibold mb-3 text-gray-300">
-            Market Signals
+            Market News
           </h2>
 
           <div className="space-y-3">
