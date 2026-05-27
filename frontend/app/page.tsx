@@ -50,20 +50,12 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white p-6 relative overflow-hidden">
 
-      {/* TOP LEFT LOGO (GREEN ENERGY CORE) */}
+      {/* LOGO TOP LEFT (ONLY CHANGED SIZE) */}
       <div className="absolute top-6 left-6">
         <img
           src="/logo.png"
           alt="Ritual Logo"
-          className="
-            w-24 h-24 object-contain
-            filter
-            drop-shadow-[0_0_20px_rgba(34,197,94,0.9)]
-            drop-shadow-[0_0_50px_rgba(34,197,94,0.5)]
-            drop-shadow-[0_0_90px_rgba(34,197,94,0.2)]
-            hover:scale-105
-            transition duration-300
-          "
+          className="w-32 h-32 object-contain drop-shadow-[0_0_18px_rgba(168,85,247,0.9)] hover:drop-shadow-[0_0_25px_rgba(236,72,153,0.9)] transition"
         />
       </div>
 
