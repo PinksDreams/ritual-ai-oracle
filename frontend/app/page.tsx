@@ -8,8 +8,7 @@ export default function Home() {
   useEffect(() => {
     fetch("/api/oracle")
       .then((res) => res.json())
-      .then(setData)
-      .catch(() => setData(null));
+      .then(setData);
   }, []);
 
   if (!data) {
@@ -20,41 +19,55 @@ export default function Home() {
     );
   }
 
+  const isBullish = data.label === "BULLISH";
+  const isBearish = data.label === "BEARISH";
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-black text-white p-6">
-      
-      <div className="w-full max-w-xl rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6">
+      <div className="w-full max-w-2xl rounded-3xl border border-white/10 bg-white/5 backdrop-blur-2xl p-8 shadow-2xl">
 
-        <h1 className="text-2xl font-bold mb-6">
+        {/* HEADER */}
+        <h1 className="text-3xl font-bold mb-6 text-center">
           🧠 Ritual AI Oracle
         </h1>
 
-        {/* SENTIMENT */}
-        <div className="mb-6">
-          <p className="text-sm text-gray-400">Sentiment</p>
+        {/* SENTIMENT CARD */}
+        <div className="grid grid-cols-2 gap-4 mb-8">
 
-          <p className="text-xl font-semibold">
-            Score: {data.score ?? "N/A"}
-          </p>
+          <div className="p-4 rounded-xl bg-white/5 border border-white/10">
+            <p className="text-gray-400 text-sm">Score</p>
+            <p className="text-2xl font-bold">{data.score}</p>
+          </div>
 
-          <p className="text-sm uppercase tracking-wider">
-            Label: {data.label ?? "UNKNOWN"}
-          </p>
+          <div className={`p-4 rounded-xl border text-center ${
+            isBullish
+              ? "bg-green-500/10 border-green-500/30 text-green-300"
+              : isBearish
+              ? "bg-red-500/10 border-red-500/30 text-red-300"
+              : "bg-gray-500/10 border-gray-500/30 text-gray-300"
+          }`}>
+            <p className="text-sm text-gray-400">Signal</p>
+            <p className="text-xl font-bold">{data.label}</p>
+          </div>
+
         </div>
 
-        {/* HEADLINES — ВОТ ТВОЙ FIX */}
+        {/* HEADLINES */}
         <div>
-          <p className="text-sm text-gray-400 mb-2">Headlines</p>
+          <h2 className="text-lg font-semibold mb-3 text-gray-300">
+            Market Signals
+          </h2>
 
-          <ul className="space-y-2 text-sm text-gray-200">
-            {Array.isArray(data.headlines) ? (
-              data.headlines.map((h: string, i: number) => (
-                <li key={i}>• {h}</li>
-              ))
-            ) : (
-              <li>• No headlines available</li>
-            )}
-          </ul>
+          <div className="space-y-3">
+            {data.headlines?.map((h: string, i: number) => (
+              <div
+                key={i}
+                className="p-3 rounded-lg bg-white/5 border border-white/10 text-sm leading-relaxed hover:bg-white/10 transition"
+              >
+                • {h}
+              </div>
+            ))}
+          </div>
         </div>
 
       </div>
