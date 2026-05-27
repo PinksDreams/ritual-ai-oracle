@@ -2,41 +2,26 @@ import { NextResponse } from "next/server";
 
 export const dynamic = "force-dynamic";
 
+const fallbackNews = [
+  "Bitcoin volatility increases amid macro uncertainty",
+  "AI trading systems reshape market liquidity",
+  "ETF inflows continue influencing crypto sentiment",
+  "Global markets react to interest rate expectations",
+  "Institutional investors increase crypto exposure",
+];
+
 export async function GET() {
   try {
-    const url =
-      "https://api.gdeltproject.org/api/v2/doc/doc?query=crypto&mode=ArtList&format=json&maxrecords=10&sort=HybridRel";
-
-    const res = await fetch(url, { cache: "no-store" });
-    const data = await res.json();
-
-    const articles =
-      data?.articles ||
-      data?.documents ||
-      data?.result ||
-      [];
-
-    const news = articles
-      .slice(0, 5)
-      .map((a: any) =>
-        a.title ||
-        a?.documentTitle ||
-        a?.seendate ||
-        "Untitled market news"
-      )
-      .filter(Boolean);
-
+    // временно НЕ используем GDELT (он ломается у тебя сейчас)
     return NextResponse.json({
-      news,
+      news: fallbackNews,
       updatedAt: new Date().toISOString(),
+      source: "fallback-stable",
     });
   } catch (e) {
     return NextResponse.json({
-      news: [
-        "Market data temporarily unavailable",
-        "Fallback system active",
-      ],
-      error: "GDELT fetch failed",
+      news: fallbackNews,
+      error: "hard fallback active",
       updatedAt: new Date().toISOString(),
     });
   }
