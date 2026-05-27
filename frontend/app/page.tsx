@@ -50,9 +50,13 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white p-6 relative overflow-hidden">
 
-      {/* TOP LEFT RITUAL MARK */}
-      <div className="absolute top-6 left-6 text-2xl text-purple-400 opacity-80 select-none">
-        ⟡
+      {/* TOP LEFT LOGO */}
+      <div className="absolute top-6 left-6 opacity-90">
+        <img
+          src="/logo.png"
+          alt="Ritual Logo"
+          className="w-10 h-10 object-contain drop-shadow-[0_0_15px_rgba(168,85,247,0.6)]"
+        />
       </div>
 
       {/* MAIN CARD */}
