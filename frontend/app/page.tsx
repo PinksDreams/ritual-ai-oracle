@@ -1,64 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
 export default function Home() {
-  const [data, setData] = useState<any>(null);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    fetch("/api/oracle")
-      .then((res) => res.json())
-      .then(setData)
-      .catch(() => setError("Failed to load oracle"));
-  }, []);
-
-  if (error) {
-    return (
-      <div className="text-red-400 text-center mt-20">
-        {error}
-      </div>
-    );
-  }
-
-  if (!data) {
-    return (
-      <div className="text-center mt-20 text-gray-400">
-        Summoning Oracle...
-      </div>
-    );
-  }
-
   return (
-    <div className="flex items-center justify-center min-h-screen p-6">
-      <div className="w-full max-w-xl rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6">
-
-        <h1 className="text-2xl font-bold mb-4">
-          🧠 Ritual AI Oracle
-        </h1>
-
-        <div className="mb-4">
-          <p className="text-sm text-gray-400">Sentiment</p>
-
-          <p className="text-xl font-semibold">
-            Score: {data.score ?? "N/A"}
-          </p>
-
-          <p className="text-sm uppercase tracking-wider">
-            Label: {data.label ?? "UNKNOWN"}
-          </p>
-        </div>
-
-        <div>
-          <p className="text-sm text-gray-400 mb-2">Headlines</p>
-
-          <ul className="space-y-2 text-sm">
-            {(data.headlines ?? []).map((h: string, i: number) => (
-              <li key={i}>• {h}</li>
-            ))}
-          </ul>
-        </div>
-
+    <div className="min-h-screen flex items-center justify-center bg-black text-white">
+      <div className="text-center">
+        <h1 className="text-2xl font-bold">Ritual AI Oracle</h1>
+        <p className="text-gray-400 mt-2">
+          UI is working — API debugging mode
+        </p>
       </div>
     </div>
   );
