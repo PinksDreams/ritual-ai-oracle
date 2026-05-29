@@ -65,9 +65,9 @@ export default function Home() {
         <div className="w-full max-w-4xl rounded-3xl border border-purple-500/20 bg-white/5 backdrop-blur-2xl p-8 shadow-2xl">
 
           {/* HEADER */}
-          <div className="flex items-start justify-between mb-8">
+          <div className="flex items-start justify-between mb-4">
 
-            <h1 className="text-5xl font-extrabold tracking-widest">
+            <h1 className="text-5xl font-extrabold tracking-widest mt-10">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-purple-300 drop-shadow-[0_0_25px_rgba(168,85,247,0.6)]">
                 AI Oracle
               </span>
